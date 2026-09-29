@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Date + consumption -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27/09/2026"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A2E"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvConsumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="155 kWh"
+                android:textSize="12sp"
+                android:textColor="#8A8FA8" />
+
+        </LinearLayout>
+
+        <!-- Bill amount -->
+        <TextView
+            android:id="@+id/tvBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="62.0 ₪"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#B45309"
+            android:background="@drawable/bg_badge_yellow"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

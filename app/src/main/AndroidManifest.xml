@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.programforcalculatingelectricity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="عداد الكهرباء"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProgramForCalculatingElectricity">
+
+        <!-- أول شاشة تفتح — بتفحص وبتوجه -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- قائمة العدادات -->
+        <activity android:name=".MeterListActivity" />
+        <activity android:name=".MeterHistoryActivity" />
+        <activity android:name=".ReadingDetailActivity" />
+
+        <!-- إضافة عداد جديد -->
+        <activity android:name=".add_meter" />
+
+        <!-- إضافة قراءة جديدة -->
+        <activity android:name=".add_reading" />
+
+        <!-- نتيجة الحساب -->
+        <activity android:name=".reading_result" />
+
+    </application>
+
+</manifest>
